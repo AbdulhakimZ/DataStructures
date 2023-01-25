@@ -1,0 +1,15 @@
+C:\Users\Lucky\Desktop\DS\app\bin\Debug\net6.0\app.exe
+C:\Users\Lucky\Desktop\DS\app\bin\Debug\net6.0\app.deps.json
+C:\Users\Lucky\Desktop\DS\app\bin\Debug\net6.0\app.runtimeconfig.json
+C:\Users\Lucky\Desktop\DS\app\bin\Debug\net6.0\app.dll
+C:\Users\Lucky\Desktop\DS\app\bin\Debug\net6.0\app.pdb
+C:\Users\Lucky\Desktop\DS\app\obj\Debug\net6.0\app.csproj.AssemblyReference.cache
+C:\Users\Lucky\Desktop\DS\app\obj\Debug\net6.0\app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lucky\Desktop\DS\app\obj\Debug\net6.0\app.AssemblyInfoInputs.cache
+C:\Users\Lucky\Desktop\DS\app\obj\Debug\net6.0\app.AssemblyInfo.cs
+C:\Users\Lucky\Desktop\DS\app\obj\Debug\net6.0\app.csproj.CoreCompileInputs.cache
+C:\Users\Lucky\Desktop\DS\app\obj\Debug\net6.0\app.dll
+C:\Users\Lucky\Desktop\DS\app\obj\Debug\net6.0\refint\app.dll
+C:\Users\Lucky\Desktop\DS\app\obj\Debug\net6.0\app.pdb
+C:\Users\Lucky\Desktop\DS\app\obj\Debug\net6.0\app.genruntimeconfig.cache
+C:\Users\Lucky\Desktop\DS\app\obj\Debug\net6.0\ref\app.dll
