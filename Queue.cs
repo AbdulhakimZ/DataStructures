@@ -84,4 +84,72 @@ namespace DS{
             return stackEnq.isEmpty() && stackDeq.isEmpty();
         }
     }
+
+    //PriorityQueue using Stack
+    public class PriorityQueue{
+        public class Node {
+            public int value;
+            public Node next;
+            public Node(int value){
+                this.value = value;
+            }
+        }
+        public Node first;
+        public Node last;
+        public void add(int item){
+            var node = new Node(item);
+            if(isEmpty()){first=last=node;return;}
+            if(first.next == null){
+                if(item<first.value){
+                    node.next = first;
+                    first=null;
+                    first = node;
+                }else{first.next = node;}
+            }
+            else{
+                var next = first.next;
+                var current = first;
+                while(next!=null){                    
+                    if(item < next.value){
+                        node.next = next;
+                        current.next = node;
+                        break;
+                    }
+                    next = next.next;
+                    current = current.next;
+                }
+                if(next == null)current.next = node;
+            }
+        }
+        public int? remove(){
+            if(isEmpty())return null;
+            if(first.next == null){
+                int item = first.value;
+                first = null;
+                return item;
+            }
+            var current = first;
+            var next = first.next;
+            while(next!=null){
+                if(next.next == null){
+                    current.next = null;
+                    last = current;
+                    break;
+                }
+                next = next.next;
+                current = current.next;
+            }
+            return next.value;
+        }
+        public Boolean isEmpty(){
+            return first==null;
+        }
+        public void print(){
+            var start = first;
+            while(start!=null){
+                Console.WriteLine(start.value+",");
+                start = start.next;
+            }
+        }
+    }
 }
