@@ -44,8 +44,7 @@ namespace DS{
                 result.Append(first.value);
                 first = first.next;
                 if(first!=null) result.Append(",");
-            }
-            
+            }            
             return result.Append("]").ToString();
         }
         //Other exercises
