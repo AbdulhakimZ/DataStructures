@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-
+using System.Text;
 namespace DS{
     public class Problems {
         public char firstNonRepeatedCharacter(string text){
@@ -37,5 +37,36 @@ namespace DS{
             }
             return hs.ToArray();
         }
+        public string LongestPalindrome(string s) {
+        var longest = new StringBuilder();
+        for(int i=0;i<s.Length;i++){
+            var temp = new StringBuilder();
+            temp.Append(s[i]);
+            if(longest.Length < temp.Length){
+                longest.Clear();
+                longest.Append(temp.ToString());
+            }
+            
+            for(int j=i+1; j<s.Length;j++){
+                temp.Append(s[j]);
+                if(IsPalindrome(temp)){
+                    if(longest.Length < temp.Length){
+                        longest.Clear();
+                        longest.Append(temp.ToString());
+                    }
+                }
+            }
+        }
+        return longest.ToString();
+    }
+    public bool IsPalindrome(StringBuilder sb){
+        string s = sb.ToString();
+        for(int i=0;i<s.Length;i++){
+            if(s[i]!=s[s.Length-1-i]){
+                return false;
+            }
+        }
+        return true;
+    }
     }
 }
